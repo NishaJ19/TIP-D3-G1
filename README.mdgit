@@ -1,0 +1,1 @@
+# TIP-D3-G1 initgit add README.mdgit commit -m first commitgit branch -M maingit remote add origin git@github.com:NishaJ19/TIP-D2-G1.gitgit push -u origin main

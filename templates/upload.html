@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Malware Detection - Upload Dataset</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex items-center py-4">
+                        <span class="font-semibold text-gray-500 text-lg">Malware Detection System</span>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                        <a href="/" class="py-4 px-2 text-gray-500 font-semibold">Overview</a>
+                        <a href="/upload" class="py-4 px-2 text-blue-500 font-semibold">Upload</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        {% if not model_loaded %}
+            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+                <strong class="font-bold">Error!</strong>
+                <span class="block sm:inline">Model not loaded. Please ensure the model is properly trained and saved.</span>
+            </div>
+        {% else %}
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-xl font-bold mb-4">Upload Dataset</h2>
+                <form id="upload-form" class="space-y-4">
+                    <div class="flex items-center justify-center w-full">
+                        <label class="flex flex-col w-full h-32 border-4 border-dashed hover:bg-gray-100 hover:border-gray-300">
+                            <div class="flex flex-col items-center justify-center pt-7">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-gray-400 group-hover:text-gray-600"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <p class="pt-1 text-sm tracking-wider text-gray-400 group-hover:text-gray-600">
+                                    Select a file</p>
+                            </div>
+                            <input type="file" class="opacity-0" name="file" accept=".csv" />
+                        </label>
+                    </div>
+                    <button type="submit"
+                        class="w-full px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+                        Upload and Analyze
+                    </button>
+                </form>
+            </div>
+        {% endif %}
+    </div>
+
+    <script>
+        document.getElementById('upload-form').addEventListener('submit', async (e) => {
+            e.preventDefault(); // Prevent the default form submission
+            console.log("Form submission intercepted.");
+
+            const formData = new FormData();
+            const fileInput = document.querySelector('input[type="file"]');
+            
+            // Check if a file is selected
+            if (!fileInput.files.length) {
+                showError('Please select a file to upload.');
+                return;
+            }
+            
+            formData.append('file', fileInput.files[0]);
+            
+            try {
+                console.log("Uploading the file...");
+
+                const submitButton = e.target.querySelector('button[type="submit"]');
+                const originalText = submitButton.textContent;
+                submitButton.textContent = 'Analyzing...';
+                submitButton.disabled = true;
+
+                const response = await fetch('/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (result.error) {
+                    console.log("Error in response: ", result.error);
+                    showError(result.error);
+                } else {
+                    console.log("Upload successful, displaying results.");
+                    showResults(result.metrics);
+                }
+            } catch (error) {
+                console.error("An error occurred during upload:", error);
+                showError('An error occurred while processing the file.');
+            } finally {
+                // Reset button state
+                const submitButton = e.target.querySelector('button[type="submit"]');
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+            }
+        });
+        
+        function showResults(metrics) {
+            // Hide error alert if visible
+            document.getElementById('error-alert').classList.add('hidden');
+
+            // Update metrics
+            document.getElementById('total-samples').textContent = metrics.total_samples;
+            document.getElementById('malicious-samples').textContent = metrics.malicious_detected;
+            document.getElementById('normal-samples').textContent = metrics.normal_samples;
+
+            // Show results section
+            document.getElementById('results-section').classList.remove('hidden');
+            
+            console.log("Results displayed.");
+        }
+
+        function showError(message) {
+            const errorAlert = document.getElementById('error-alert');
+            const errorMessage = document.getElementById('error-message');
+            
+            errorMessage.textContent = message;
+            errorAlert.classList.remove('hidden');
+            document.getElementById('results-section').classList.add('hidden');
+        }
+
+        // File input visual feedback
+        const fileInput = document.querySelector('input[type="file"]');
+        fileInput.addEventListener('change', (e) => {
+            const fileName = e.target.files[0]?.name;
+            const fileLabel = e.target.parentElement.querySelector('p');
+            fileLabel.textContent = fileName || 'Select a file';
+        });
+    </script>
+</body>
+</html>

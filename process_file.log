@@ -1,0 +1,130 @@
+[2024-10-09 11:45:46] Attempting to upload file: UNSW_NB15_testing-set.csv
+[2024-10-09 11:45:46] File uploaded successfully: uploads/UNSW_NB15_testing-set.csv
+[2024-10-09 11:45:46] Executing command: python scan_file.py ^"uploads/UNSW_NB15_testing-set.csv^"
+[2024-10-09 11:45:47] Python script output: 
+[2024-10-09 11:45:47] Error: Scan results are empty or invalid.
+[2024-10-09 11:46:42] Attempting to upload file: UNSW_NB15_testing-set.csv
+[2024-10-09 11:46:42] File uploaded successfully: uploads/UNSW_NB15_testing-set.csv
+[2024-10-09 11:46:42] Executing command: python scan_file.py ^"uploads/UNSW_NB15_testing-set.csv^"
+[2024-10-09 11:46:42] Python script output: 
+[2024-10-09 11:46:42] Error: Scan results are empty or invalid.
+[2024-10-09 11:49:23] Attempting to upload file: UNSW_NB15_testing-set.csv
+[2024-10-09 11:49:23] File uploaded successfully: uploads/UNSW_NB15_testing-set.csv
+[2024-10-09 11:49:23] Executing command: python scan_file.py ^"uploads/UNSW_NB15_testing-set.csv^"
+[2024-10-09 11:49:24] Python script output: 
+[2024-10-09 11:49:24] Error: Unknown error occurred
+[2024-10-09 11:51:08] Attempting to upload file: UNSW_NB15_testing-set.csv
+[2024-10-09 11:51:08] File uploaded successfully: uploads/UNSW_NB15_testing-set.csv
+[2024-10-09 11:51:08] Executing command: python scan_file.py ^"uploads/UNSW_NB15_testing-set.csv^"
+[2024-10-09 11:51:08] Python script output: 
+[2024-10-09 11:51:08] Error: Unknown error occurred
+[2024-10-09 11:53:54] Attempting to upload file: UNSW_NB15_testing-set.csv
+[2024-10-09 11:53:54] File uploaded successfully: uploads/UNSW_NB15_testing-set.csv
+[2024-10-09 11:53:54] Executing command: python scan_file.py ^"uploads/UNSW_NB15_testing-set.csv^"
+[2024-10-09 11:53:54] Python script raw output: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Manage App Execution Aliases.
+
+[2024-10-09 11:53:54] Error: Unknown error occurred. Raw output: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Manage App Execution Aliases.
+
+[2024-10-09 11:55:59] Attempting to upload file: UNSW_NB15_testing-set.csv
+[2024-10-09 11:55:59] File uploaded successfully: uploads/UNSW_NB15_testing-set.csv
+[2024-10-09 11:55:59] Executing command: python3 scan_file.py ^"uploads/UNSW_NB15_testing-set.csv^"
+[2024-10-09 11:56:00] Python script raw output: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Manage App Execution Aliases.
+
+[2024-10-09 11:56:00] Error: Unknown error occurred. Raw output: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Manage App Execution Aliases.
+
+[2024-10-09 12:01:40] Attempting to upload file: UNSW_NB15_testing-set.csv
+[2024-10-09 12:01:40] File uploaded successfully: uploads/UNSW_NB15_testing-set.csv
+[2024-10-09 12:01:40] Executing command: wsl python3 C:^\xampp^\htdocs^\projectbu/scan_file.py ^"/mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_testing-set.csv^"
+[2024-10-09 12:01:41] Python script raw output: python3: can't open file '/mnt/c/xampp/htdocs/projectbu/C:xampphtdocsprojectbu/scan_file.py': [Errno 2] No such file or directory
+
+[2024-10-09 12:01:41] Error: Unknown error occurred. Raw output: python3: can't open file '/mnt/c/xampp/htdocs/projectbu/C:xampphtdocsprojectbu/scan_file.py': [Errno 2] No such file or directory
+
+[2024-10-09 12:03:44] Attempting to upload file: UNSW_NB15_testing-set.csv
+[2024-10-09 12:03:44] File uploaded successfully: uploads/UNSW_NB15_testing-set.csv
+[2024-10-09 12:03:44] Executing command: wsl python3 ^"/mnt/c/xampp/htdocs/projectbu/scan_file.py^" ^"/mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_testing-set.csv^"
+[2024-10-09 12:04:08] Python script raw output: {"total_samples": 82332, "malicious_detected": 45185, "normal_samples": 37147}
+
+[2024-10-09 12:04:08] Scan completed successfully
+[2024-10-09 12:07:39] Attempting to upload file: UNSW_NB15_training-set.csv
+[2024-10-09 12:07:39] File uploaded successfully: uploads/UNSW_NB15_training-set.csv
+[2024-10-09 12:07:39] Executing command: wsl python3 ^"/mnt/c/xampp/htdocs/projectbu/scan_file.py^" ^"/mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_training-set.csv^"
+[2024-10-09 12:07:51] Python script raw output: {"total_samples": 1110, "malicious_detected": 103, "normal_samples": 1007}
+
+[2024-10-09 12:07:51] Scan completed successfully
+[2024-10-09 12:09:17] Attempting to upload file: UNSW_NB15_training-set.csv
+[2024-10-09 12:09:17] File uploaded successfully: uploads/UNSW_NB15_training-set.csv
+[2024-10-09 12:09:17] Executing command: wsl python3 ^"/mnt/c/xampp/htdocs/projectbu/scan_file.py^" ^"/mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_training-set.csv^"
+[2024-10-09 12:09:25] Python script raw output: {"total_samples": 1110, "malicious_detected": 103, "normal_samples": 1007}
+
+[2024-10-09 12:09:25] Scan completed successfully
+[2024-10-09 12:13:26] Attempting to upload file: UNSW_NB15_training-set.csv
+[2024-10-09 12:13:26] File uploaded successfully: uploads/UNSW_NB15_training-set.csv
+[2024-10-09 12:13:26] Executing command: wsl python3 ^"/mnt/c/xampp/htdocs/projectbu/scan_file.py^" ^"/mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_training-set.csv^"
+[2024-10-09 12:13:36] Python script raw output: {"total_samples": 1110, "malicious_detected": 103, "normal_samples": 1007}
+
+[2024-10-09 12:13:36] Scan completed successfully
+[2024-10-09 12:16:15] Attempting to upload file: UNSW_NB15_training-set.csv
+[2024-10-09 12:16:15] File uploaded successfully: uploads/UNSW_NB15_training-set.csv
+[2024-10-09 12:16:15] Executing command: wsl python3 ^"/mnt/c/xampp/htdocs/projectbu/scan_file.py^" ^"/mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_training-set.csv^"
+[2024-10-09 12:16:35] Python script raw output: {"total_samples": 1110, "malicious_detected": 103, "normal_samples": 1007}
+
+[2024-10-09 12:16:35] Scan completed successfully
+[2024-10-09 12:17:22] Attempting to upload file: UNSW_NB15_testing-set.csv
+[2024-10-09 12:17:22] File uploaded successfully: uploads/UNSW_NB15_testing-set.csv
+[2024-10-09 12:17:22] Executing command: wsl python3 ^"/mnt/c/xampp/htdocs/projectbu/scan_file.py^" ^"/mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_testing-set.csv^"
+[2024-10-09 12:17:46] Python script raw output: {"total_samples": 82332, "malicious_detected": 45185, "normal_samples": 37147}
+
+[2024-10-09 12:27:05] Attempting to upload file: UNSW_NB15_training-set.csv
+[2024-10-09 12:27:05] File uploaded successfully: uploads/UNSW_NB15_training-set.csv
+[2024-10-09 12:27:05] Executing command: wsl python3 ^"/mnt/c/xampp/htdocs/projectbu/scan_file.py^" ^"/mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_training-set.csv^"
+[2024-10-09 12:27:17] Python script raw output: {"total_samples": 1110, "malicious_detected": 103, "normal_samples": 1007}
+
+[2024-10-09 12:30:46] Attempting to upload file: UNSW-NB15.csv
+[2024-10-09 12:30:46] File uploaded successfully: uploads/UNSW-NB15.csv
+[2024-10-09 12:30:46] Executing command: wsl python3 ^"/mnt/c/xampp/htdocs/projectbu/scan_file.py^" ^"/mnt/c/xampp/htdocs/projectbu/uploads/UNSW-NB15.csv^"
+[2024-10-09 12:31:35] Python script raw output: {"total_samples": 175341, "malicious_detected": 104930, "normal_samples": 70411}
+
+[2024-10-09 12:35:16] Attempting to upload file: UNSW_NB15_training-set.csv
+[2024-10-09 12:35:16] File uploaded successfully: uploads/UNSW_NB15_training-set.csv
+[2024-10-09 12:35:16] Executing command: wsl python3 ^"/mnt/c/xampp/htdocs/projectbu/scan_file.py^" ^"/mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_training-set.csv^"
+[2024-10-09 12:35:27] Python script raw output: {"total_samples": 1110, "malicious_detected": 103, "normal_samples": 1007}
+
+[2024-10-09 12:44:11] Attempting to upload file: UNSW-NB15.csv
+[2024-10-09 12:44:11] File uploaded successfully: uploads/UNSW-NB15.csv
+[2024-10-09 12:44:11] Executing command: wsl python3 ^"/mnt/c/xampp/htdocs/projectbu/scan_file.py^" ^"/mnt/c/xampp/htdocs/projectbu/uploads/UNSW-NB15.csv^"
+[2024-10-09 12:45:01] Python script raw output: {"total_samples": 175341, "malicious_detected": 104930, "normal_samples": 70411}
+
+[2024-10-09 12:45:01] Attempting to upload file: UNSW-NB15.csv
+[2024-10-09 12:45:01] File uploaded successfully: uploads/UNSW-NB15.csv
+[2024-10-09 12:45:01] Executing command: wsl python3 ^"/mnt/c/xampp/htdocs/projectbu/scan_file.py^" ^"/mnt/c/xampp/htdocs/projectbu/uploads/UNSW-NB15.csv^"
+[2024-10-09 12:45:50] Python script raw output: {"total_samples": 175341, "malicious_detected": 104930, "normal_samples": 70411}
+
+[2024-10-11 00:40:44] Attempting to upload file: UNSW_NB15_testing-set.csv
+[2024-10-11 00:40:44] File uploaded successfully: uploads/UNSW_NB15_testing-set.csv
+[2024-10-11 00:40:44] Executing command: wsl python3 ^"/mnt/c/xampp/htdocs/projectbu/scan_file.py^" ^"/mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_testing-set.csv^"
+[2024-10-11 00:40:45] Python script raw output: W i n d o w s   S u b s y s t e m   f o r   L i n u x   h a s   n o   i n s t a l l e d   d i s t r i b u t i o n s .  
+  
+ U s e   ' w s l . e x e   - - l i s t   - - o n l i n e '   t o   l i s t   a v a i l a b l e   d i s t r i b u t i o n s  
+ a n d   ' w s l . e x e   - - i n s t a l l   < D i s t r o > '   t o   i n s t a l l .  
+  
+ D i s t r i b u t i o n s   c a n   a l s o   b e   i n s t a l l e d   b y   v i s i t i n g   t h e   M i c r o s o f t   S t o r e :  
+ h t t p s : / / a k a . m s / w s l s t o r e  
+ E r r o r   c o d e :   W s l / S e r v i c e / C r e a t e I n s t a n c e / G e t D e f a u l t D i s t r o / W S L _ E _ D E F A U L T _ D I S T R O _ N O T _ F O U N D  
+ 
+[2024-10-11 00:41:01] Attempting to upload file: UNSW_NB15_training-set.csv
+[2024-10-11 00:41:01] File uploaded successfully: uploads/UNSW_NB15_training-set.csv
+[2024-10-11 00:41:01] Executing command: wsl python3 ^"/mnt/c/xampp/htdocs/projectbu/scan_file.py^" ^"/mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_training-set.csv^"
+[2024-10-11 00:41:01] Python script raw output: W i n d o w s   S u b s y s t e m   f o r   L i n u x   h a s   n o   i n s t a l l e d   d i s t r i b u t i o n s .  
+  
+ U s e   ' w s l . e x e   - - l i s t   - - o n l i n e '   t o   l i s t   a v a i l a b l e   d i s t r i b u t i o n s  
+ a n d   ' w s l . e x e   - - i n s t a l l   < D i s t r o > '   t o   i n s t a l l .  
+  
+ D i s t r i b u t i o n s   c a n   a l s o   b e   i n s t a l l e d   b y   v i s i t i n g   t h e   M i c r o s o f t   S t o r e :  
+ h t t p s : / / a k a . m s / w s l s t o r e  
+ E r r o r   c o d e :   W s l / S e r v i c e / C r e a t e I n s t a n c e / G e t D e f a u l t D i s t r o / W S L _ E _ D E F A U L T _ D I S T R O _ N O T _ F O U N D  
+ 
+[2024-10-13 14:46:05] Attempting to upload file: UNSW_NB15_training-set.csv
+[2024-10-13 14:46:05] File uploaded successfully: uploads/UNSW_NB15_training-set.csv
+[2024-10-13 14:46:05] Executing command: wsl python3 ^"/mnt/c/xampp/htdocs/projectbu/scan_file.py^" ^"/mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_training-set.csv^"
+[2024-10-13 14:46:15] Python script raw output: {"total_samples": 1110, "malicious_detected": 103, "normal_samples": 1007}
+

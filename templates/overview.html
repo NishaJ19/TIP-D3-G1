@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Malware Detection - Model Overview</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex items-center py-4">
+                        <span class="font-semibold text-gray-500 text-lg">Malware Detection System</span>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                        <a href="/" class="py-4 px-2 text-blue-500 font-semibold">Overview</a>
+                        <a href="/upload" class="py-4 px-2 text-gray-500 font-semibold">Upload</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        {% if not model_loaded %}
+            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+                <strong class="font-bold">Error!</strong>
+                <span class="block sm:inline">Model not loaded. Please ensure the model is properly trained and saved.</span>
+            </div>
+        {% else %}
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Feature Importance Plot -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div id="feature-importance-plot"></div>
+                </div>
+
+                <!-- Confusion Matrix -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div id="confusion-matrix-plot"></div>
+                </div>
+
+                <!-- Classification Metrics -->
+                <div class="bg-white p-6 rounded-lg shadow-lg col-span-2">
+                    <h2 class="text-xl font-bold mb-4">Classification Metrics</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="p-4 bg-blue-50 rounded-lg">
+                            <h3 class="font-semibold">Accuracy</h3>
+                            <!-- Use .get() to handle missing 'accuracy' key -->
+                            <p class="text-2xl">{{ "%.2f"|format(metrics.get('accuracy', 0) * 100) }}%</p>
+                        </div>
+                        <div class="p-4 bg-green-50 rounded-lg">
+                            <h3 class="font-semibold">Precision</h3>
+                            <p class="text-2xl">{{ "%.2f"|format(metrics['classification_report'].get('1', {}).get('precision', 0) * 100) }}%</p>
+                        </div>
+                        <div class="p-4 bg-yellow-50 rounded-lg">
+                            <h3 class="font-semibold">Recall</h3>
+                            <p class="text-2xl">{{ "%.2f"|format(metrics['classification_report'].get('1', {}).get('recall', 0) * 100) }}%</p>
+                        </div>
+                        <div class="p-4 bg-purple-50 rounded-lg">
+                            <h3 class="font-semibold">F1-Score</h3>
+                            <p class="text-2xl">{{ "%.2f"|format(metrics['classification_report'].get('1', {}).get('f1-score', 0) * 100) }}%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Attack Category Distribution (Pie Chart) -->
+                <div class="bg-white p-6 rounded-lg shadow-lg col-span-2">
+                    <h2 class="text-xl font-bold mb-4">Attack Category Distribution</h2>
+                    <div id="attack-category-pie-chart"></div>
+                </div>
+            </div>
+
+            <script>
+                var featureImportancePlot = {{ plots.feature_importance | safe }};
+                var confusionMatrixPlot = {{ plots.confusion_matrix | safe }};
+                var attackCategoryPieChart = {{ insights['attack_category_pie_chart'] | safe }};
+                
+                Plotly.newPlot('feature-importance-plot', featureImportancePlot.data, featureImportancePlot.layout);
+                Plotly.newPlot('confusion-matrix-plot', confusionMatrixPlot.data, confusionMatrixPlot.layout);
+                Plotly.newPlot('attack-category-pie-chart', attackCategoryPieChart.data, attackCategoryPieChart.layout);
+            </script>
+        {% endif %}
+    </div>
+</body>
+</html>

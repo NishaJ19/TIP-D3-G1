@@ -1,0 +1,165 @@
+2024-10-09 21:03:48,560 INFO: Script started
+2024-10-09 21:03:48,569 INFO: File path received: /mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_testing-set.csv
+2024-10-09 21:03:48,570 INFO: Attempting to load model from: /mnt/c/xampp/htdocs/projectbu/model_malware.joblib
+2024-10-09 21:03:54,948 INFO: Model loaded successfully
+2024-10-09 21:03:54,949 INFO: Processing file: /mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_testing-set.csv
+2024-10-09 21:03:55,561 INFO: File loaded, shape: (82332, 45)
+2024-10-09 21:03:55,562 INFO: Columns in the dataset: ['id', 'dur', 'proto', 'service', 'state', 'spkts', 'dpkts', 'sbytes', 'dbytes', 'rate', 'sttl', 'dttl', 'sload', 'dload', 'sloss', 'dloss', 'sinpkt', 'dinpkt', 'sjit', 'djit', 'swin', 'stcpb', 'dtcpb', 'dwin', 'tcprtt', 'synack', 'ackdat', 'smean', 'dmean', 'trans_depth', 'response_body_len', 'ct_srv_src', 'ct_state_ttl', 'ct_dst_ltm', 'ct_src_dport_ltm', 'ct_dst_sport_ltm', 'ct_dst_src_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'ct_flw_http_mthd', 'ct_src_ltm', 'ct_srv_dst', 'is_sm_ips_ports', 'attack_cat', 'label']
+2024-10-09 21:03:55,699 INFO: Data preprocessed
+2024-10-09 21:03:55,700 INFO: Columns after preprocessing: ['dur', 'proto', 'service', 'state', 'spkts', 'dpkts', 'sbytes', 'dbytes', 'rate', 'sttl', 'dttl', 'sload', 'dload', 'sloss', 'dloss', 'sinpkt', 'dinpkt', 'sjit', 'djit', 'swin', 'stcpb', 'dtcpb', 'dwin', 'tcprtt', 'synack', 'ackdat', 'smean', 'dmean', 'trans_depth', 'response_body_len', 'ct_srv_src', 'ct_state_ttl', 'ct_dst_ltm', 'ct_src_dport_ltm', 'ct_dst_sport_ltm', 'ct_dst_src_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'ct_flw_http_mthd', 'ct_src_ltm', 'ct_srv_dst', 'is_sm_ips_ports', 'attack_cat', 'label']
+2024-10-09 21:03:55,707 INFO: Features prepared, shape: (82332, 42)
+2024-10-09 21:03:55,814 INFO: Features scaled
+2024-10-09 21:04:07,768 INFO: Predictions made by individual models
+2024-10-09 21:04:07,782 INFO: Final predictions computed
+2024-10-09 21:04:07,796 INFO: Analysis completed successfully. Results: {'total_samples': 82332, 'malicious_detected': 45185, 'normal_samples': 37147}
+2024-10-09 21:04:07,799 INFO: Script completed successfully
+2024-10-09 21:07:43,138 INFO: Script started
+2024-10-09 21:07:43,139 INFO: File path received: /mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_training-set.csv
+2024-10-09 21:07:43,140 INFO: Attempting to load model from: /mnt/c/xampp/htdocs/projectbu/model_malware.joblib
+2024-10-09 21:07:50,101 INFO: Model loaded successfully
+2024-10-09 21:07:50,102 INFO: Processing file: /mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_training-set.csv
+2024-10-09 21:07:50,161 INFO: File loaded, shape: (1110, 45)
+2024-10-09 21:07:50,161 INFO: Columns in the dataset: ['id', 'dur', 'proto', 'service', 'state', 'spkts', 'dpkts', 'sbytes', 'dbytes', 'rate', 'sttl', 'dttl', 'sload', 'dload', 'sloss', 'dloss', 'sinpkt', 'dinpkt', 'sjit', 'djit', 'swin', 'stcpb', 'dtcpb', 'dwin', 'tcprtt', 'synack', 'ackdat', 'smean', 'dmean', 'trans_depth', 'response_body_len', 'ct_srv_src', 'ct_state_ttl', 'ct_dst_ltm', 'ct_src_dport_ltm', 'ct_dst_sport_ltm', 'ct_dst_src_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'ct_flw_http_mthd', 'ct_src_ltm', 'ct_srv_dst', 'is_sm_ips_ports', 'attack_cat', 'label']
+2024-10-09 21:07:50,181 INFO: Data preprocessed
+2024-10-09 21:07:50,181 INFO: Columns after preprocessing: ['dur', 'proto', 'service', 'state', 'spkts', 'dpkts', 'sbytes', 'dbytes', 'rate', 'sttl', 'dttl', 'sload', 'dload', 'sloss', 'dloss', 'sinpkt', 'dinpkt', 'sjit', 'djit', 'swin', 'stcpb', 'dtcpb', 'dwin', 'tcprtt', 'synack', 'ackdat', 'smean', 'dmean', 'trans_depth', 'response_body_len', 'ct_srv_src', 'ct_state_ttl', 'ct_dst_ltm', 'ct_src_dport_ltm', 'ct_dst_sport_ltm', 'ct_dst_src_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'ct_flw_http_mthd', 'ct_src_ltm', 'ct_srv_dst', 'is_sm_ips_ports', 'attack_cat', 'label']
+2024-10-09 21:07:50,184 INFO: Features prepared, shape: (1110, 42)
+2024-10-09 21:07:50,189 INFO: Features scaled
+2024-10-09 21:07:50,685 INFO: Predictions made by individual models
+2024-10-09 21:07:50,688 INFO: Final predictions computed
+2024-10-09 21:07:50,689 INFO: Analysis completed successfully. Results: {'total_samples': 1110, 'malicious_detected': 103, 'normal_samples': 1007}
+2024-10-09 21:07:50,690 INFO: Script completed successfully
+2024-10-09 21:09:20,077 INFO: Script started
+2024-10-09 21:09:20,078 INFO: File path received: /mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_training-set.csv
+2024-10-09 21:09:20,079 INFO: Attempting to load model from: /mnt/c/xampp/htdocs/projectbu/model_malware.joblib
+2024-10-09 21:09:25,230 INFO: Model loaded successfully
+2024-10-09 21:09:25,231 INFO: Processing file: /mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_training-set.csv
+2024-10-09 21:09:25,264 INFO: File loaded, shape: (1110, 45)
+2024-10-09 21:09:25,265 INFO: Columns in the dataset: ['id', 'dur', 'proto', 'service', 'state', 'spkts', 'dpkts', 'sbytes', 'dbytes', 'rate', 'sttl', 'dttl', 'sload', 'dload', 'sloss', 'dloss', 'sinpkt', 'dinpkt', 'sjit', 'djit', 'swin', 'stcpb', 'dtcpb', 'dwin', 'tcprtt', 'synack', 'ackdat', 'smean', 'dmean', 'trans_depth', 'response_body_len', 'ct_srv_src', 'ct_state_ttl', 'ct_dst_ltm', 'ct_src_dport_ltm', 'ct_dst_sport_ltm', 'ct_dst_src_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'ct_flw_http_mthd', 'ct_src_ltm', 'ct_srv_dst', 'is_sm_ips_ports', 'attack_cat', 'label']
+2024-10-09 21:09:25,278 INFO: Data preprocessed
+2024-10-09 21:09:25,278 INFO: Columns after preprocessing: ['dur', 'proto', 'service', 'state', 'spkts', 'dpkts', 'sbytes', 'dbytes', 'rate', 'sttl', 'dttl', 'sload', 'dload', 'sloss', 'dloss', 'sinpkt', 'dinpkt', 'sjit', 'djit', 'swin', 'stcpb', 'dtcpb', 'dwin', 'tcprtt', 'synack', 'ackdat', 'smean', 'dmean', 'trans_depth', 'response_body_len', 'ct_srv_src', 'ct_state_ttl', 'ct_dst_ltm', 'ct_src_dport_ltm', 'ct_dst_sport_ltm', 'ct_dst_src_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'ct_flw_http_mthd', 'ct_src_ltm', 'ct_srv_dst', 'is_sm_ips_ports', 'attack_cat', 'label']
+2024-10-09 21:09:25,280 INFO: Features prepared, shape: (1110, 42)
+2024-10-09 21:09:25,287 INFO: Features scaled
+2024-10-09 21:09:25,690 INFO: Predictions made by individual models
+2024-10-09 21:09:25,691 INFO: Final predictions computed
+2024-10-09 21:09:25,692 INFO: Analysis completed successfully. Results: {'total_samples': 1110, 'malicious_detected': 103, 'normal_samples': 1007}
+2024-10-09 21:09:25,693 INFO: Script completed successfully
+2024-10-09 21:13:28,851 INFO: Script started
+2024-10-09 21:13:28,853 INFO: File path received: /mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_training-set.csv
+2024-10-09 21:13:28,853 INFO: Attempting to load model from: /mnt/c/xampp/htdocs/projectbu/model_malware.joblib
+2024-10-09 21:13:35,522 INFO: Model loaded successfully
+2024-10-09 21:13:35,523 INFO: Processing file: /mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_training-set.csv
+2024-10-09 21:13:35,566 INFO: File loaded, shape: (1110, 45)
+2024-10-09 21:13:35,566 INFO: Columns in the dataset: ['id', 'dur', 'proto', 'service', 'state', 'spkts', 'dpkts', 'sbytes', 'dbytes', 'rate', 'sttl', 'dttl', 'sload', 'dload', 'sloss', 'dloss', 'sinpkt', 'dinpkt', 'sjit', 'djit', 'swin', 'stcpb', 'dtcpb', 'dwin', 'tcprtt', 'synack', 'ackdat', 'smean', 'dmean', 'trans_depth', 'response_body_len', 'ct_srv_src', 'ct_state_ttl', 'ct_dst_ltm', 'ct_src_dport_ltm', 'ct_dst_sport_ltm', 'ct_dst_src_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'ct_flw_http_mthd', 'ct_src_ltm', 'ct_srv_dst', 'is_sm_ips_ports', 'attack_cat', 'label']
+2024-10-09 21:13:35,580 INFO: Data preprocessed
+2024-10-09 21:13:35,580 INFO: Columns after preprocessing: ['dur', 'proto', 'service', 'state', 'spkts', 'dpkts', 'sbytes', 'dbytes', 'rate', 'sttl', 'dttl', 'sload', 'dload', 'sloss', 'dloss', 'sinpkt', 'dinpkt', 'sjit', 'djit', 'swin', 'stcpb', 'dtcpb', 'dwin', 'tcprtt', 'synack', 'ackdat', 'smean', 'dmean', 'trans_depth', 'response_body_len', 'ct_srv_src', 'ct_state_ttl', 'ct_dst_ltm', 'ct_src_dport_ltm', 'ct_dst_sport_ltm', 'ct_dst_src_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'ct_flw_http_mthd', 'ct_src_ltm', 'ct_srv_dst', 'is_sm_ips_ports', 'attack_cat', 'label']
+2024-10-09 21:13:35,582 INFO: Features prepared, shape: (1110, 42)
+2024-10-09 21:13:35,586 INFO: Features scaled
+2024-10-09 21:13:35,946 INFO: Predictions made by individual models
+2024-10-09 21:13:35,947 INFO: Final predictions computed
+2024-10-09 21:13:35,948 INFO: Analysis completed successfully. Results: {'total_samples': 1110, 'malicious_detected': 103, 'normal_samples': 1007}
+2024-10-09 21:13:35,949 INFO: Script completed successfully
+2024-10-09 21:16:24,574 INFO: Script started
+2024-10-09 21:16:24,576 INFO: File path received: /mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_training-set.csv
+2024-10-09 21:16:24,577 INFO: Attempting to load model from: /mnt/c/xampp/htdocs/projectbu/model_malware.joblib
+2024-10-09 21:16:33,989 INFO: Model loaded successfully
+2024-10-09 21:16:33,991 INFO: Processing file: /mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_training-set.csv
+2024-10-09 21:16:34,060 INFO: File loaded, shape: (1110, 45)
+2024-10-09 21:16:34,061 INFO: Columns in the dataset: ['id', 'dur', 'proto', 'service', 'state', 'spkts', 'dpkts', 'sbytes', 'dbytes', 'rate', 'sttl', 'dttl', 'sload', 'dload', 'sloss', 'dloss', 'sinpkt', 'dinpkt', 'sjit', 'djit', 'swin', 'stcpb', 'dtcpb', 'dwin', 'tcprtt', 'synack', 'ackdat', 'smean', 'dmean', 'trans_depth', 'response_body_len', 'ct_srv_src', 'ct_state_ttl', 'ct_dst_ltm', 'ct_src_dport_ltm', 'ct_dst_sport_ltm', 'ct_dst_src_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'ct_flw_http_mthd', 'ct_src_ltm', 'ct_srv_dst', 'is_sm_ips_ports', 'attack_cat', 'label']
+2024-10-09 21:16:34,075 INFO: Data preprocessed
+2024-10-09 21:16:34,077 INFO: Columns after preprocessing: ['dur', 'proto', 'service', 'state', 'spkts', 'dpkts', 'sbytes', 'dbytes', 'rate', 'sttl', 'dttl', 'sload', 'dload', 'sloss', 'dloss', 'sinpkt', 'dinpkt', 'sjit', 'djit', 'swin', 'stcpb', 'dtcpb', 'dwin', 'tcprtt', 'synack', 'ackdat', 'smean', 'dmean', 'trans_depth', 'response_body_len', 'ct_srv_src', 'ct_state_ttl', 'ct_dst_ltm', 'ct_src_dport_ltm', 'ct_dst_sport_ltm', 'ct_dst_src_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'ct_flw_http_mthd', 'ct_src_ltm', 'ct_srv_dst', 'is_sm_ips_ports', 'attack_cat', 'label']
+2024-10-09 21:16:34,079 INFO: Features prepared, shape: (1110, 42)
+2024-10-09 21:16:34,083 INFO: Features scaled
+2024-10-09 21:16:34,573 INFO: Predictions made by individual models
+2024-10-09 21:16:34,574 INFO: Final predictions computed
+2024-10-09 21:16:34,575 INFO: Analysis completed successfully. Results: {'total_samples': 1110, 'malicious_detected': 103, 'normal_samples': 1007}
+2024-10-09 21:16:34,577 INFO: Script completed successfully
+2024-10-09 21:17:24,718 INFO: Script started
+2024-10-09 21:17:24,720 INFO: File path received: /mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_testing-set.csv
+2024-10-09 21:17:24,720 INFO: Attempting to load model from: /mnt/c/xampp/htdocs/projectbu/model_malware.joblib
+2024-10-09 21:17:31,378 INFO: Model loaded successfully
+2024-10-09 21:17:31,379 INFO: Processing file: /mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_testing-set.csv
+2024-10-09 21:17:32,335 INFO: File loaded, shape: (82332, 45)
+2024-10-09 21:17:32,336 INFO: Columns in the dataset: ['id', 'dur', 'proto', 'service', 'state', 'spkts', 'dpkts', 'sbytes', 'dbytes', 'rate', 'sttl', 'dttl', 'sload', 'dload', 'sloss', 'dloss', 'sinpkt', 'dinpkt', 'sjit', 'djit', 'swin', 'stcpb', 'dtcpb', 'dwin', 'tcprtt', 'synack', 'ackdat', 'smean', 'dmean', 'trans_depth', 'response_body_len', 'ct_srv_src', 'ct_state_ttl', 'ct_dst_ltm', 'ct_src_dport_ltm', 'ct_dst_sport_ltm', 'ct_dst_src_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'ct_flw_http_mthd', 'ct_src_ltm', 'ct_srv_dst', 'is_sm_ips_ports', 'attack_cat', 'label']
+2024-10-09 21:17:32,487 INFO: Data preprocessed
+2024-10-09 21:17:32,488 INFO: Columns after preprocessing: ['dur', 'proto', 'service', 'state', 'spkts', 'dpkts', 'sbytes', 'dbytes', 'rate', 'sttl', 'dttl', 'sload', 'dload', 'sloss', 'dloss', 'sinpkt', 'dinpkt', 'sjit', 'djit', 'swin', 'stcpb', 'dtcpb', 'dwin', 'tcprtt', 'synack', 'ackdat', 'smean', 'dmean', 'trans_depth', 'response_body_len', 'ct_srv_src', 'ct_state_ttl', 'ct_dst_ltm', 'ct_src_dport_ltm', 'ct_dst_sport_ltm', 'ct_dst_src_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'ct_flw_http_mthd', 'ct_src_ltm', 'ct_srv_dst', 'is_sm_ips_ports', 'attack_cat', 'label']
+2024-10-09 21:17:32,496 INFO: Features prepared, shape: (82332, 42)
+2024-10-09 21:17:32,611 INFO: Features scaled
+2024-10-09 21:17:45,690 INFO: Predictions made by individual models
+2024-10-09 21:17:45,709 INFO: Final predictions computed
+2024-10-09 21:17:45,726 INFO: Analysis completed successfully. Results: {'total_samples': 82332, 'malicious_detected': 45185, 'normal_samples': 37147}
+2024-10-09 21:17:45,744 INFO: Script completed successfully
+2024-10-09 21:27:09,696 INFO: Script started
+2024-10-09 21:27:09,697 INFO: File path received: /mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_training-set.csv
+2024-10-09 21:27:09,698 INFO: Attempting to load model from: /mnt/c/xampp/htdocs/projectbu/model_malware.joblib
+2024-10-09 21:27:16,077 INFO: Model loaded successfully
+2024-10-09 21:27:16,077 INFO: Processing file: /mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_training-set.csv
+2024-10-09 21:27:16,137 INFO: File loaded, shape: (1110, 45)
+2024-10-09 21:27:16,138 INFO: Columns in the dataset: ['id', 'dur', 'proto', 'service', 'state', 'spkts', 'dpkts', 'sbytes', 'dbytes', 'rate', 'sttl', 'dttl', 'sload', 'dload', 'sloss', 'dloss', 'sinpkt', 'dinpkt', 'sjit', 'djit', 'swin', 'stcpb', 'dtcpb', 'dwin', 'tcprtt', 'synack', 'ackdat', 'smean', 'dmean', 'trans_depth', 'response_body_len', 'ct_srv_src', 'ct_state_ttl', 'ct_dst_ltm', 'ct_src_dport_ltm', 'ct_dst_sport_ltm', 'ct_dst_src_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'ct_flw_http_mthd', 'ct_src_ltm', 'ct_srv_dst', 'is_sm_ips_ports', 'attack_cat', 'label']
+2024-10-09 21:27:16,169 INFO: Data preprocessed
+2024-10-09 21:27:16,170 INFO: Columns after preprocessing: ['dur', 'proto', 'service', 'state', 'spkts', 'dpkts', 'sbytes', 'dbytes', 'rate', 'sttl', 'dttl', 'sload', 'dload', 'sloss', 'dloss', 'sinpkt', 'dinpkt', 'sjit', 'djit', 'swin', 'stcpb', 'dtcpb', 'dwin', 'tcprtt', 'synack', 'ackdat', 'smean', 'dmean', 'trans_depth', 'response_body_len', 'ct_srv_src', 'ct_state_ttl', 'ct_dst_ltm', 'ct_src_dport_ltm', 'ct_dst_sport_ltm', 'ct_dst_src_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'ct_flw_http_mthd', 'ct_src_ltm', 'ct_srv_dst', 'is_sm_ips_ports', 'attack_cat', 'label']
+2024-10-09 21:27:16,180 INFO: Features prepared, shape: (1110, 42)
+2024-10-09 21:27:16,189 INFO: Features scaled
+2024-10-09 21:27:16,822 INFO: Predictions made by individual models
+2024-10-09 21:27:16,827 INFO: Final predictions computed
+2024-10-09 21:27:16,828 INFO: Analysis completed successfully. Results: {'total_samples': 1110, 'malicious_detected': 103, 'normal_samples': 1007}
+2024-10-09 21:27:16,830 INFO: Script completed successfully
+2024-10-09 21:30:50,250 INFO: Script started
+2024-10-09 21:30:50,251 INFO: File path received: /mnt/c/xampp/htdocs/projectbu/uploads/UNSW-NB15.csv
+2024-10-09 21:30:50,251 INFO: Attempting to load model from: /mnt/c/xampp/htdocs/projectbu/model_malware.joblib
+2024-10-09 21:30:56,925 INFO: Model loaded successfully
+2024-10-09 21:30:56,926 INFO: Processing file: /mnt/c/xampp/htdocs/projectbu/uploads/UNSW-NB15.csv
+2024-10-09 21:30:58,383 INFO: File loaded, shape: (175341, 45)
+2024-10-09 21:30:58,384 INFO: Columns in the dataset: ['id', 'dur', 'proto', 'service', 'state', 'spkts', 'dpkts', 'sbytes', 'dbytes', 'rate', 'sttl', 'dttl', 'sload', 'dload', 'sloss', 'dloss', 'sinpkt', 'dinpkt', 'sjit', 'djit', 'swin', 'stcpb', 'dtcpb', 'dwin', 'tcprtt', 'synack', 'ackdat', 'smean', 'dmean', 'trans_depth', 'response_body_len', 'ct_srv_src', 'ct_state_ttl', 'ct_dst_ltm', 'ct_src_dport_ltm', 'ct_dst_sport_ltm', 'ct_dst_src_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'ct_flw_http_mthd', 'ct_src_ltm', 'ct_srv_dst', 'is_sm_ips_ports', 'attack_cat', 'label']
+2024-10-09 21:30:58,665 INFO: Data preprocessed
+2024-10-09 21:30:58,666 INFO: Columns after preprocessing: ['dur', 'proto', 'service', 'state', 'spkts', 'dpkts', 'sbytes', 'dbytes', 'rate', 'sttl', 'dttl', 'sload', 'dload', 'sloss', 'dloss', 'sinpkt', 'dinpkt', 'sjit', 'djit', 'swin', 'stcpb', 'dtcpb', 'dwin', 'tcprtt', 'synack', 'ackdat', 'smean', 'dmean', 'trans_depth', 'response_body_len', 'ct_srv_src', 'ct_state_ttl', 'ct_dst_ltm', 'ct_src_dport_ltm', 'ct_dst_sport_ltm', 'ct_dst_src_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'ct_flw_http_mthd', 'ct_src_ltm', 'ct_srv_dst', 'is_sm_ips_ports', 'attack_cat', 'label']
+2024-10-09 21:30:58,691 INFO: Features prepared, shape: (175341, 42)
+2024-10-09 21:30:58,991 INFO: Features scaled
+2024-10-09 21:31:30,954 INFO: Predictions made by individual models
+2024-10-09 21:31:31,160 INFO: Final predictions computed
+2024-10-09 21:31:31,207 INFO: Analysis completed successfully. Results: {'total_samples': 175341, 'malicious_detected': 104930, 'normal_samples': 70411}
+2024-10-09 21:31:31,625 INFO: Script completed successfully
+2024-10-09 21:35:19,197 INFO: Script started
+2024-10-09 21:35:19,198 INFO: File path received: /mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_training-set.csv
+2024-10-09 21:35:19,198 INFO: Attempting to load model from: /mnt/c/xampp/htdocs/projectbu/model_malware.joblib
+2024-10-09 21:35:26,533 INFO: Model loaded successfully
+2024-10-09 21:35:26,534 INFO: Processing file: /mnt/c/xampp/htdocs/projectbu/uploads/UNSW_NB15_training-set.csv
+2024-10-09 21:35:26,617 INFO: File loaded, shape: (1110, 45)
+2024-10-09 21:35:26,618 INFO: Columns in the dataset: ['id', 'dur', 'proto', 'service', 'state', 'spkts', 'dpkts', 'sbytes', 'dbytes', 'rate', 'sttl', 'dttl', 'sload', 'dload', 'sloss', 'dloss', 'sinpkt', 'dinpkt', 'sjit', 'djit', 'swin', 'stcpb', 'dtcpb', 'dwin', 'tcprtt', 'synack', 'ackdat', 'smean', 'dmean', 'trans_depth', 'response_body_len', 'ct_srv_src', 'ct_state_ttl', 'ct_dst_ltm', 'ct_src_dport_ltm', 'ct_dst_sport_ltm', 'ct_dst_src_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'ct_flw_http_mthd', 'ct_src_ltm', 'ct_srv_dst', 'is_sm_ips_ports', 'attack_cat', 'label']
+2024-10-09 21:35:26,666 INFO: Data preprocessed
+2024-10-09 21:35:26,729 INFO: Columns after preprocessing: ['dur', 'proto', 'service', 'state', 'spkts', 'dpkts', 'sbytes', 'dbytes', 'rate', 'sttl', 'dttl', 'sload', 'dload', 'sloss', 'dloss', 'sinpkt', 'dinpkt', 'sjit', 'djit', 'swin', 'stcpb', 'dtcpb', 'dwin', 'tcprtt', 'synack', 'ackdat', 'smean', 'dmean', 'trans_depth', 'response_body_len', 'ct_srv_src', 'ct_state_ttl', 'ct_dst_ltm', 'ct_src_dport_ltm', 'ct_dst_sport_ltm', 'ct_dst_src_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'ct_flw_http_mthd', 'ct_src_ltm', 'ct_srv_dst', 'is_sm_ips_ports', 'attack_cat', 'label']
+2024-10-09 21:35:26,739 INFO: Features prepared, shape: (1110, 42)
+2024-10-09 21:35:26,790 INFO: Features scaled
+2024-10-09 21:35:27,133 INFO: Predictions made by individual models
+2024-10-09 21:35:27,135 INFO: Final predictions computed
+2024-10-09 21:35:27,136 INFO: Analysis completed successfully. Results: {'total_samples': 1110, 'malicious_detected': 103, 'normal_samples': 1007}
+2024-10-09 21:35:27,137 INFO: Script completed successfully
+2024-10-09 21:44:18,773 INFO: Script started
+2024-10-09 21:44:18,775 INFO: File path received: /mnt/c/xampp/htdocs/projectbu/uploads/UNSW-NB15.csv
+2024-10-09 21:44:18,776 INFO: Attempting to load model from: /mnt/c/xampp/htdocs/projectbu/model_malware.joblib
+2024-10-09 21:44:28,906 INFO: Model loaded successfully
+2024-10-09 21:44:28,907 INFO: Processing file: /mnt/c/xampp/htdocs/projectbu/uploads/UNSW-NB15.csv
+2024-10-09 21:44:31,297 INFO: File loaded, shape: (175341, 45)
+2024-10-09 21:44:31,297 INFO: Columns in the dataset: ['id', 'dur', 'proto', 'service', 'state', 'spkts', 'dpkts', 'sbytes', 'dbytes', 'rate', 'sttl', 'dttl', 'sload', 'dload', 'sloss', 'dloss', 'sinpkt', 'dinpkt', 'sjit', 'djit', 'swin', 'stcpb', 'dtcpb', 'dwin', 'tcprtt', 'synack', 'ackdat', 'smean', 'dmean', 'trans_depth', 'response_body_len', 'ct_srv_src', 'ct_state_ttl', 'ct_dst_ltm', 'ct_src_dport_ltm', 'ct_dst_sport_ltm', 'ct_dst_src_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'ct_flw_http_mthd', 'ct_src_ltm', 'ct_srv_dst', 'is_sm_ips_ports', 'attack_cat', 'label']
+2024-10-09 21:44:31,558 INFO: Data preprocessed
+2024-10-09 21:44:31,561 INFO: Columns after preprocessing: ['dur', 'proto', 'service', 'state', 'spkts', 'dpkts', 'sbytes', 'dbytes', 'rate', 'sttl', 'dttl', 'sload', 'dload', 'sloss', 'dloss', 'sinpkt', 'dinpkt', 'sjit', 'djit', 'swin', 'stcpb', 'dtcpb', 'dwin', 'tcprtt', 'synack', 'ackdat', 'smean', 'dmean', 'trans_depth', 'response_body_len', 'ct_srv_src', 'ct_state_ttl', 'ct_dst_ltm', 'ct_src_dport_ltm', 'ct_dst_sport_ltm', 'ct_dst_src_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'ct_flw_http_mthd', 'ct_src_ltm', 'ct_srv_dst', 'is_sm_ips_ports', 'attack_cat', 'label']
+2024-10-09 21:44:31,577 INFO: Features prepared, shape: (175341, 42)
+2024-10-09 21:44:31,735 INFO: Features scaled
+2024-10-09 21:44:58,953 INFO: Predictions made by individual models
+2024-10-09 21:44:58,997 INFO: Final predictions computed
+2024-10-09 21:44:59,031 INFO: Analysis completed successfully. Results: {'total_samples': 175341, 'malicious_detected': 104930, 'normal_samples': 70411}
+2024-10-09 21:44:59,126 INFO: Script completed successfully
+2024-10-09 21:45:04,945 INFO: Script started
+2024-10-09 21:45:04,946 INFO: File path received: /mnt/c/xampp/htdocs/projectbu/uploads/UNSW-NB15.csv
+2024-10-09 21:45:04,946 INFO: Attempting to load model from: /mnt/c/xampp/htdocs/projectbu/model_malware.joblib
+2024-10-09 21:45:14,617 INFO: Model loaded successfully
+2024-10-09 21:45:14,617 INFO: Processing file: /mnt/c/xampp/htdocs/projectbu/uploads/UNSW-NB15.csv
+2024-10-09 21:45:15,733 INFO: File loaded, shape: (175341, 45)
+2024-10-09 21:45:15,734 INFO: Columns in the dataset: ['id', 'dur', 'proto', 'service', 'state', 'spkts', 'dpkts', 'sbytes', 'dbytes', 'rate', 'sttl', 'dttl', 'sload', 'dload', 'sloss', 'dloss', 'sinpkt', 'dinpkt', 'sjit', 'djit', 'swin', 'stcpb', 'dtcpb', 'dwin', 'tcprtt', 'synack', 'ackdat', 'smean', 'dmean', 'trans_depth', 'response_body_len', 'ct_srv_src', 'ct_state_ttl', 'ct_dst_ltm', 'ct_src_dport_ltm', 'ct_dst_sport_ltm', 'ct_dst_src_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'ct_flw_http_mthd', 'ct_src_ltm', 'ct_srv_dst', 'is_sm_ips_ports', 'attack_cat', 'label']
+2024-10-09 21:45:15,954 INFO: Data preprocessed
+2024-10-09 21:45:15,955 INFO: Columns after preprocessing: ['dur', 'proto', 'service', 'state', 'spkts', 'dpkts', 'sbytes', 'dbytes', 'rate', 'sttl', 'dttl', 'sload', 'dload', 'sloss', 'dloss', 'sinpkt', 'dinpkt', 'sjit', 'djit', 'swin', 'stcpb', 'dtcpb', 'dwin', 'tcprtt', 'synack', 'ackdat', 'smean', 'dmean', 'trans_depth', 'response_body_len', 'ct_srv_src', 'ct_state_ttl', 'ct_dst_ltm', 'ct_src_dport_ltm', 'ct_dst_sport_ltm', 'ct_dst_src_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'ct_flw_http_mthd', 'ct_src_ltm', 'ct_srv_dst', 'is_sm_ips_ports', 'attack_cat', 'label']
+2024-10-09 21:45:15,970 INFO: Features prepared, shape: (175341, 42)
+2024-10-09 21:45:16,095 INFO: Features scaled
+2024-10-09 21:45:45,913 INFO: Predictions made by individual models
+2024-10-09 21:45:46,043 INFO: Final predictions computed
+2024-10-09 21:45:46,101 INFO: Analysis completed successfully. Results: {'total_samples': 175341, 'malicious_detected': 104930, 'normal_samples': 70411}
+2024-10-09 21:45:46,247 INFO: Script completed successfully
